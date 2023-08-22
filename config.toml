@@ -1,0 +1,17 @@
+baseURL = 'http://example.org/'
+languageCode = 'pt-br'
+title = 'Ofertas Mágicas'
+theme = "ganimedes"
+sectionPagesMenu = "menu"
+
+[menu]
+  [[menu.main]]
+    name = "Início"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Produtos"
+    pre = "pen-tool"
+    url = "/products/"
+    weight = 2

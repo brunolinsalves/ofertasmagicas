@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    padding: 58px 0px 0px 0px;
+  }
+  
+  .image-slider {
+    max-height: 45vh;
+  }
+  
+  .filterDiv {
+    display: none !important;
+  }
+  
+  .show {
+    display: block !important;
+  }
+  
+  .categoria_produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 0px 20px;
+  }
+  
+  .imagem_produto {
+    width: 150px;
+  }
+  
+  #footer {
+    min-height: 18vh;
+    background-color: rgba(var(--bs-secondary-bg-rgb),var(--bs-bg-opacity))!important;
+  }
+  
+  .logo_header {
+    width: 1.5rem;
+  }
+  
+  .logo_footer {
+    width: 6rem;
+  }
+  
+  
+  
+  [data-bs-theme=dark] .logo_header {
+    filter: brightness(0) invert(1);
+  }
+  
+  [data-bs-theme=dark] .logo_footer {
+    filter: brightness(0) invert(1);
+  }

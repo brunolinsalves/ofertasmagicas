@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="/js/scripts.js"></script>
+
+<script>
+    const breakpoint_sm = 576;
+    const breakpoint_md = 768;
+    const breakpoint_lg = 992;
+    const breakpoint_xl = 1200;
+
+    const btn_group_produtos = document.querySelector('#btn_group_produtos')
+    if (screen.width > breakpoint_lg) {
+      w3RemoveClass(btn_group_produtos, 'btn-group-vertical')
+      w3AddClass(btn_group_produtos, 'btn-group')
+    }
+
+    // seta o modo noturno como padrão
+    modo_noturno = document.querySelector('#modo_noturno')
+    modo_noturno.checked = true
+    alterar_tema(modo_noturno)
+    // Mostra todos os produtos ao abrir a página
+    products = document.getElementsByClassName("filterDiv");
+    for (i = 0; i < products.length; i++) {
+      w3AddClass(products[i], "show");
+    }
+  </script>
