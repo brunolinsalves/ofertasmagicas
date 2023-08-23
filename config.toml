@@ -12,6 +12,6 @@ sectionPagesMenu = "menu"
     weight = 1
   [[menu.main]]
     name = "Produtos"
-    pre = "pen-tool"
+    pre = "products"
     url = "/products/"
     weight = 2
