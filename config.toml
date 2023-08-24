@@ -7,7 +7,7 @@ sectionPagesMenu = "menu"
 [menu]
   [[menu.main]]
     name = "Início"
-    pre = "welcome_message"
+    pre = "home"
     url = "/"
     weight = 1
   [[menu.main]]
