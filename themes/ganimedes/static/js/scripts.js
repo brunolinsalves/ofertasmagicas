@@ -8,6 +8,78 @@ function alterar_tema(event) {
     }    
 }
 
+function mount_pagination(actual_page, categoria) {
+  
+  if (categoria == 'all') {
+    filtro_categoria = ''
+  } else {
+    filtro_categoria = '.' + categoria
+  }
+
+  filtered_products = produtos = document.querySelectorAll(`.filterDiv${filtro_categoria}`)
+
+  items_per_page = document.querySelector('#items_per_page').value
+  produtos = document.querySelectorAll(`.filterDiv`)
+  qtd_paginas = Math.ceil(filtered_products.length / items_per_page)
+
+  start_index = (actual_page - 1) * items_per_page
+  end_index   = actual_page * items_per_page
+  filter_products_from_pagination(produtos, categoria, start_index, end_index)
+  
+  previous_page = document.querySelector('#previous_page')
+  next_page     = document.querySelector('#next_page')
+  
+  if (qtd_paginas == 1) {
+    w3AddClass(previous_page, 'disabled')
+    w3AddClass(next_page, 'disabled')
+  } else {
+    if (actual_page == 1) {
+      w3AddClass(previous_page, 'disabled')
+    }
+    if (actual_page == qtd_paginas) {
+      w3AddClass(next_page, 'disabled')
+    }
+  }
+
+  pages = document.querySelector('#numbered_pages')
+  pages.innerHTML = ''
+  for (let pagina = 1; pagina < qtd_paginas + 1; pagina++) {
+    if (pagina == actual_page) {
+      is_active = ' active'
+    } else {
+      is_active = ''
+    }
+    pagination_html = `<li class="page-item"><a class="page-link ${is_active}" href="#products" onclick="mount_pagination(${pagina},'${categoria}')">${pagina}</a></li>`
+    pages.innerHTML += pagination_html
+  }
+
+}
+
+function filter_products_from_pagination(produtos, categoria, start, end) {
+
+  for (let i = 0; i < produtos.length; i++) {
+    w3RemoveClass(produtos[i], 'show')
+  }
+
+  if (categoria == 'all') {
+    filtro_categoria = ''
+  } else {
+    filtro_categoria = '.' + categoria
+  }
+
+  filtered_products = produtos = document.querySelectorAll(`.filterDiv${filtro_categoria}`)
+
+  for (let i = 0; i < filtered_products.length; i++) {
+    if ( (i >= start) && (i < end) ) {
+      w3AddClass(filtered_products[i], 'show')
+    } else {
+      w3RemoveClass(filtered_products[i], 'show')
+    }
+  }
+
+  return false
+
+}
 
 function set_button_active(e) {
   buttons = document.querySelectorAll('.filter_button')
@@ -35,7 +107,7 @@ function filterSelection(e, c) {
   }
   
   return false
-  }
+}
   
   // Show filtered elements
   function w3AddClass(element, name) {

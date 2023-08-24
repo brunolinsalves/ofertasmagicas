@@ -53,16 +53,18 @@
 <div class="py-3 d-flex justify-content-center row gx-0">
   <div id="btn_group_produtos" class="btn-group-vertical" role="group" aria-label="Basic example">
 
-    <button type="button" class="col filter_button btn btn-secondary active" onclick="return filterSelection(this, 'all')">Todos</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'cozinha')">Cozinha</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'saude')">Saúde e Beleza</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'celulares')">Celulares e acessórios</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'casa')">Casa e decoração</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'utilidades')">Utilidades domésticas</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'roupas')">Roupas e acessórios</button>
-    <button type="button" class="col filter_button btn btn-secondary" onclick="return filterSelection(this, 'eletronicos')">Eletrônicos</button>
+    <button type="button" class="col filter_button btn btn-secondary active" onclick="return mount_pagination(1, 'all')">Todos</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'cozinha')">Cozinha</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'saude')">Saúde e Beleza</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'celulares')">Celulares e acessórios</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'casa')">Casa e decoração</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'utilidades')">Utilidades domésticas</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'roupas')">Roupas e acessórios</button>
+    <button type="button" class="col filter_button btn btn-secondary" onclick="return mount_pagination(1, 'eletronicos')">Eletrônicos</button>
   </div>
 </div>
+
+<input id="items_per_page" type="hidden" value="12" />
 
 <div class="container-fluid row gx-0 justify-content-center pb-4">
 
@@ -85,6 +87,30 @@
     </div>
     
   {{ end }}
+
+  <div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation example ">
+      <ul class="pagination">
+        <li id="previous_page" class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <div id="numbered_pages" class="d-flex flex-row">
+          <li class="page-item"><a class="page-link" href="#">será gerado dinamicamente</a></li>
+        </div>
+        
+        <li id="next_page" class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>  
+  </div>
+  
 
 </div>
 
