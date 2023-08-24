@@ -1,7 +1,7 @@
 ---
 nome: "Chinela ultra confortável tipo Pé de Algodão"
 imagem_perfil: "assets/img/products/003-chinela-pe-algodao/01.png"
-imagens: assets/img/products/003-chinela-pe-algodao/01.png"]
+imagens: ["assets/img/products/003-chinela-pe-algodao/01.png"]
 categoria: "roupas"
 descricao: "Essa sandália oferece uma experiência de caminhada incrivelmente suave e confortável, tornando cada passo uma sensação de bem-estar. Dê o conforto máximo aos seus pés"
 preco: "R$42,18"

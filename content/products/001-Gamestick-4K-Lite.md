@@ -1,7 +1,7 @@
 ---
 nome: "Gamestick 4k Lite"
 imagem_perfil: "assets/img/products/001-gamestick-4k/01.png"
-imagens: assets/img/products/001-gamestick-4k/01.png"]
+imagens: ["assets/img/products/001-gamestick-4k/01.png"]
 categoria: "eletronicos"
 descricao: "Jogue todos os seus jogos (mais de 10.000) retrô favoritos, com dois controles sem fio."
 preco: "R$ 93,17"
