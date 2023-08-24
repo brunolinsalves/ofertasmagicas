@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://www.ofertasmagicas.net/'
 languageCode = 'pt-br'
 title = 'Ofertas Mágicas'
 theme = "ganimedes"
