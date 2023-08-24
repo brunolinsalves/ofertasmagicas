@@ -2,8 +2,8 @@
 
   <nav class="navbar-expand-lg navbar bg-body-secondary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex" href="#">
-        <img class="logo_header" src="assets/img/logo-no-text.svg" alt="">
+      <a class="navbar-brand d-flex" href="/">
+        <img class="logo_header" src="/assets/img/logo-no-text.svg" alt="">
         <span class="mt-2 mx-1">Ofertas Mágicas</span> 
       </a>
       <button
@@ -34,7 +34,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             {{ range .Site.Menus.main }}
-                {{ $text := printf "<li class='nav-item'><a class='nav-link active' aria-current='page' href='#%s'>%s</a></li>" .Pre .Name | safeHTML }}
+                {{ $text := printf "<li class='nav-item'><a class='nav-link active' aria-current='page' href='%s'>%s</a></li>" .Pre .Name | safeHTML }}
                 {{ $text }}
             {{ end }}
             <li class="nav-item">

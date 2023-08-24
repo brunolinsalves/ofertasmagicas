@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<input type="hidden" id="page_type" value="index"/>
+
 <div class="content">
   <div id="home" class="text-center p-3">
       <p>
@@ -77,9 +79,12 @@
               <h5 class="card-title">{{ .Params.Nome }}</h5>
               <p class="card-text">{{ .Params.Descricao }}</p>
               <hr>
-              <div class="d-flex flex-row justify-content-between align-items-center align-self-center">
-                <p><strong>Preço: </strong>{{ .Params.Preco }}</p>
-                <a href="{{ .Params.Link }}" target="_blank" class="btn btn-primary">Ir para loja</a>
+              <p><strong>Preço: </strong>{{ .Params.Preco }}</p>
+              <div class="d-flex flex-row justify-content-end align-items-center align-self-center">
+                
+                
+                <a href="{{ .RelPermalink }}" class="btn btn-secondary mx-2">Detalhes</a>
+                <a href="{{ .Params.Link }}" target="_blank" class="btn btn-primary">Comprar</a>
             </div>
               
           </div>
@@ -115,3 +120,4 @@
 </div>
 
 {{ end }}
+

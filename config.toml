@@ -7,11 +7,11 @@ sectionPagesMenu = "menu"
 [menu]
   [[menu.main]]
     name = "Início"
-    pre = "home"
+    pre = ""
     url = "/"
     weight = 1
   [[menu.main]]
     name = "Produtos"
-    pre = "produtos"
+    pre = "/#produtos"
     url = "/products/"
     weight = 2
