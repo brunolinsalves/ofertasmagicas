@@ -1,7 +1,12 @@
 ---
 nome: "Impermeabilizante de superfícies. Se livre dos vazamentos e infiltrações!"
 imagem_perfil: "assets/img/products/009-impermeabilizante-liquido/01.png"
-imagens: ["assets/img/products/009-impermeabilizante-liquido/01.png"]
+imagens: ["/assets/img/products/009-impermeabilizante-liquido/01.png", 
+          "/assets/img/products/009-impermeabilizante-liquido/02.png",
+          "/assets/img/products/009-impermeabilizante-liquido/03.png",
+          "/assets/img/products/009-impermeabilizante-liquido/04.png",
+          "/assets/img/products/009-impermeabilizante-liquido/05.png",
+          "/assets/img/products/009-impermeabilizante-liquido/06.png"]
 categoria: "utilidades"
 descricao: "Proteção contra vazamentos e infiltrações! Utilize esse impermeabilizante de superfícies para formar uma barreira confiável para manter ambientes secos e livres de danos causados pela água."
 preco: "R$ 31,77 - R$ 41,41"

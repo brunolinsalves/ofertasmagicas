@@ -4,10 +4,13 @@ title = 'Ofertas Mágicas'
 theme = "ganimedes"
 sectionPagesMenu = "menu"
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [menu]
   [[menu.main]]
     name = "Início"
-    pre = ""
+    pre = "/"
     url = "/"
     weight = 1
   [[menu.main]]

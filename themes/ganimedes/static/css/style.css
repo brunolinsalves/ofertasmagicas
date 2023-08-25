@@ -10,6 +10,7 @@ body {
   .imagem_carousel {
     height: 40vh;
     object-fit: scale-down;
+    margin: auto;
   }
 
   [data-bs-theme=dark] .carousel_caption_background {
@@ -58,10 +59,10 @@ body {
   }
 
   .product_detais_images {
-    
+    width: 50%;
+    float: left;
+    margin: 0px 1rem 5rem 0px;
   }
-  
-  
   
   [data-bs-theme=dark] .logo_header {
     filter: brightness(0) invert(1);
