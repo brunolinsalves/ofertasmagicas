@@ -43,9 +43,13 @@
         <!-- Thumbnails -->
       </div>
 
-      <div class="">
+      <div>
         <h4>{{ .Params.Nome }}</h4>
-        <p><strong>Preço:</strong> {{ .Params.Preco  }}</p>
+        <div class="d-flex flex-row align-items-center">
+          <p class="m-0"><strong>Preço:</strong> {{ .Params.Preco  }}</p>
+          <a href="{{ .Params.Link }}" target="_blank" class="btn btn-primary mx-3">Comprar</a>
+        </div>
+        
         <hr>
         <p>{{ .Content }}</p>
       </div>
