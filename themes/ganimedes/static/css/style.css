@@ -28,7 +28,7 @@ body {
   }
   
 .card_size {
-  width: 35rem !important;
+  width: 22rem !important;
 }
 
   .categoria_produtos {
@@ -40,8 +40,8 @@ body {
   }
   
   .imagem_produto {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   
   #footer {

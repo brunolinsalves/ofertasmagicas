@@ -74,8 +74,9 @@
 
     <div class="filterDiv card card_size m-4 {{ .Params.categoria }}">
       <div class="card-body d-flex">
-          <img src="{{ .Params.imagem_perfil }}" class="d-inline mx-3 imagem_produto" alt="">
+          
           <div class="">
+              <img src="{{ .Params.imagem_perfil }}" class="float-start me-3 mb-1 imagem_produto" alt="">
               <h5 class="card-title">{{ .Params.Nome }}</h5>
               <p class="card-text">{{ .Params.Descricao }}</p>
               <hr>
