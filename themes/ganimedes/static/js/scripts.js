@@ -8,7 +8,38 @@ function alterar_tema(event) {
     }    
 }
 
-function mount_pagination(actual_page, categoria) {
+function search_by_text(element) {
+  texto = element.value
+  page_element = document.querySelector(".page-link.active") 
+  if (page_element != null) {
+    actual_page = document.querySelector(".page-link.active").innerHTML
+    mount_pagination(actual_page, 'all', texto)
+  } else {
+    numbered_pages = document.querySelector('#numbered_pages').innerHTML = "<li class='page-item'><a class='page-link  active' href='#products' onclick='mount_pagination(1,all, )'>1</a></li>"
+  }
+  
+}
+
+function do_filter_text(products, filter) {
+  if (filter == undefined || filter == '') {
+    return products
+  }
+
+  retorno = []
+  for (var i = 0; i < products.length; i++) {
+    if ( products[i].innerHTML.includes(filter) ) {
+      retorno.push(products[i])
+    }
+  }
+
+  return retorno
+}
+
+function mount_pagination(actual_page, categoria, text_filter) {
+
+
+  category_button = document.querySelector(`#category_${categoria}`)
+  set_button_active( category_button )
   
   if (categoria == 'all') {
     filtro_categoria = ''
@@ -17,6 +48,7 @@ function mount_pagination(actual_page, categoria) {
   }
 
   filtered_products = produtos = document.querySelectorAll(`.filterDiv${filtro_categoria}`)
+  filtered_products = do_filter_text(filtered_products, text_filter)
 
   items_per_page = document.querySelector('#items_per_page').value
   produtos = document.querySelectorAll(`.filterDiv`)
@@ -24,7 +56,7 @@ function mount_pagination(actual_page, categoria) {
 
   start_index = (actual_page - 1) * items_per_page
   end_index   = actual_page * items_per_page
-  filter_products_from_pagination(produtos, categoria, start_index, end_index)
+  filter_products_from_pagination(produtos, categoria, text_filter, start_index, end_index)
   
   previous_page = document.querySelector('#previous_page')
   next_page     = document.querySelector('#next_page')
@@ -49,13 +81,13 @@ function mount_pagination(actual_page, categoria) {
     } else {
       is_active = ''
     }
-    pagination_html = `<li class="page-item"><a class="page-link ${is_active}" href="#products" onclick="mount_pagination(${pagina},'${categoria}')">${pagina}</a></li>`
+    pagination_html = `<li class="page-item"><a class="page-link ${is_active}" href="#products" onclick="mount_pagination(${pagina},'${categoria}', '')">${pagina}</a></li>`
     pages.innerHTML += pagination_html
   }
 
 }
 
-function filter_products_from_pagination(produtos, categoria, start, end) {
+function filter_products_from_pagination(produtos, categoria, text_filter, start, end) {
 
   for (let i = 0; i < produtos.length; i++) {
     w3RemoveClass(produtos[i], 'show')
@@ -68,6 +100,7 @@ function filter_products_from_pagination(produtos, categoria, start, end) {
   }
 
   filtered_products = produtos = document.querySelectorAll(`.filterDiv${filtro_categoria}`)
+  filtered_products = do_filter_text(filtered_products, text_filter)
 
   for (let i = 0; i < filtered_products.length; i++) {
     if ( (i >= start) && (i < end) ) {
