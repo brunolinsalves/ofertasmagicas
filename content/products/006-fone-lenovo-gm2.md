@@ -1,14 +1,7 @@
 ---
 nome: "Fone de ouvido sem fio (Bluetooth 5.3) Lenovo GM2 Pro"
 imagem_perfil: "/assets/img/products/006-fone-lenovo-gm2/01.webp"
-imagens: ["/assets/img/products/006-fone-lenovo-gm2/01.webp",
-          "/assets/img/products/006-fone-lenovo-gm2/08.png",
-          "/assets/img/products/006-fone-lenovo-gm2/02.png",
-          "/assets/img/products/006-fone-lenovo-gm2/03.png",
-          "/assets/img/products/006-fone-lenovo-gm2/04.png",
-          "/assets/img/products/006-fone-lenovo-gm2/05.png",
-          "/assets/img/products/006-fone-lenovo-gm2/06.png",
-          "/assets/img/products/006-fone-lenovo-gm2/07.png"]
+imagens: ["/assets/img/products/006-fone-lenovo-gm2/01.webp","/assets/img/products/006-fone-lenovo-gm2/08.png","/assets/img/products/006-fone-lenovo-gm2/02.png","/assets/img/products/006-fone-lenovo-gm2/03.png","/assets/img/products/006-fone-lenovo-gm2/04.png","/assets/img/products/006-fone-lenovo-gm2/05.png","/assets/img/products/006-fone-lenovo-gm2/06.png","/assets/img/products/006-fone-lenovo-gm2/07.png"]
 categoria: "celulares"
 descricao: "Áudio imersivo sem limites! Fone gamer Lenovo wireless, Bluetooth 5.3, para uma experiência sonora épica e jogos cativantes, tudo livre de fios."
 preco: "R$ 46,05"

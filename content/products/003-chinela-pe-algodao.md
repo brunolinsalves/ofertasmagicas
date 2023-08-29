@@ -1,19 +1,7 @@
 ---
 nome: "Chinela ultra confortável tipo Pé de Algodão"
 imagem_perfil: "/assets/img/products/003-chinela-pe-algodao/01.png"
-imagens: ["/assets/img/products/003-chinela-pe-algodao/01.png",
-          "/assets/img/products/003-chinela-pe-algodao/02.png",
-          "/assets/img/products/003-chinela-pe-algodao/03.png",
-          "/assets/img/products/003-chinela-pe-algodao/04.png",
-          "/assets/img/products/003-chinela-pe-algodao/05.png",
-          "/assets/img/products/003-chinela-pe-algodao/06.png",
-          "/assets/img/products/003-chinela-pe-algodao/07.png",
-          "/assets/img/products/003-chinela-pe-algodao/08.png",
-          "/assets/img/products/003-chinela-pe-algodao/09.png",
-          "/assets/img/products/003-chinela-pe-algodao/10.png",
-          "/assets/img/products/003-chinela-pe-algodao/11.png",
-          "/assets/img/products/003-chinela-pe-algodao/12.png",
-          "/assets/img/products/003-chinela-pe-algodao/13.png"]
+imagens: ["/assets/img/products/003-chinela-pe-algodao/01.png","/assets/img/products/003-chinela-pe-algodao/02.png","/assets/img/products/003-chinela-pe-algodao/03.png","/assets/img/products/003-chinela-pe-algodao/04.png","/assets/img/products/003-chinela-pe-algodao/05.png","/assets/img/products/003-chinela-pe-algodao/06.png","/assets/img/products/003-chinela-pe-algodao/07.png","/assets/img/products/003-chinela-pe-algodao/08.png","/assets/img/products/003-chinela-pe-algodao/09.png","/assets/img/products/003-chinela-pe-algodao/10.png","/assets/img/products/003-chinela-pe-algodao/11.png","/assets/img/products/003-chinela-pe-algodao/12.png","/assets/img/products/003-chinela-pe-algodao/13.png"]
 categoria: "roupas"
 descricao: "Essa sandália oferece uma experiência de caminhada incrivelmente suave e confortável, tornando cada passo uma sensação de bem-estar. Dê o conforto máximo aos seus pés"
 preco: "R$42,18"

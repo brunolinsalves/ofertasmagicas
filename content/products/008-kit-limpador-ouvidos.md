@@ -1,12 +1,7 @@
 ---
 nome: "Kit limpador de ouvido com 6 peças"
 imagem_perfil: "assets/img/products/008-kit-limpador-ouvidos/01.png"
-imagens: ["/assets/img/products/008-kit-limpador-ouvidos/01.png",
-          "/assets/img/products/008-kit-limpador-ouvidos/02.png",
-          "/assets/img/products/008-kit-limpador-ouvidos/03.png",
-          "/assets/img/products/008-kit-limpador-ouvidos/04.png",
-          "/assets/img/products/008-kit-limpador-ouvidos/05.png",
-          "/assets/img/products/008-kit-limpador-ouvidos/06.png"]
+imagens: ["/assets/img/products/008-kit-limpador-ouvidos/01.png","/assets/img/products/008-kit-limpador-ouvidos/02.png","/assets/img/products/008-kit-limpador-ouvidos/03.png","/assets/img/products/008-kit-limpador-ouvidos/04.png","/assets/img/products/008-kit-limpador-ouvidos/05.png","/assets/img/products/008-kit-limpador-ouvidos/06.png"]
 categoria: "saude"
 descricao: "Limpeza suave e eficaz! Kit de limpeza de ouvidos com 6 peças, projetado para cuidado delicado e remoção de cera. Conforto e higiene em um só conjunto."
 preco: "R$ 28,99"

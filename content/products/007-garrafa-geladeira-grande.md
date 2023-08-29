@@ -1,9 +1,7 @@
 ---
 nome: "Garrafa para Sucos, Chás ou outras bebidas frias de 3.5L ou 5L: Mantenha o Sabor Gelado à Mão!"
 imagem_perfil: "/assets/img/products/007-garrafa-geladeira-grande/01.png"
-imagens: ["/assets/img/products/007-garrafa-geladeira-grande/01.png",
-        "/assets/img/products/007-garrafa-geladeira-grande/02.png",
-        "/assets/img/products/007-garrafa-geladeira-grande/03.png"]
+imagens: ["/assets/img/products/007-garrafa-geladeira-grande/01.png","/assets/img/products/007-garrafa-geladeira-grande/02.png","/assets/img/products/007-garrafa-geladeira-grande/03.png"]
 categoria: "cozinha"
 descricao: "Armazene frescor! Garrafa de 3.5L ou 5L para geladeira, ideal para sucos e chás gelados. Mantém suas bebidas favoritas sempre prontas e refrescantes."
 preco: "R$ 45,75"

@@ -1,12 +1,7 @@
 ---
 nome: "Raquete de Beach Tennis"
 imagem_perfil: "assets/img/products/010-raquete-beach-tennis-camewin/01.png"
-imagens: ["/assets/img/products/010-raquete-beach-tennis-camewin/01.png", 
-          "/assets/img/products/010-raquete-beach-tennis-camewin/02.png",
-          "/assets/img/products/010-raquete-beach-tennis-camewin/03.png",
-          "/assets/img/products/010-raquete-beach-tennis-camewin/04.png",
-          "/assets/img/products/010-raquete-beach-tennis-camewin/05.png",
-          "/assets/img/products/010-raquete-beach-tennis-camewin/06.png"]
+imagens: ["/assets/img/products/010-raquete-beach-tennis-camewin/01.png", "/assets/img/products/010-raquete-beach-tennis-camewin/02.png","/assets/img/products/010-raquete-beach-tennis-camewin/03.png","/assets/img/products/010-raquete-beach-tennis-camewin/04.png","/assets/img/products/010-raquete-beach-tennis-camewin/05.png","/assets/img/products/010-raquete-beach-tennis-camewin/06.png"]
 categoria: "esportes"
 descricao: "Domine o jogo com a raquete de beach tennis Camewin 300-320g. Potência e controle excepcionais unidos em um design perfeito para homens e mulheres. Alcance o máximo desempenho na areia!"
 preco: "R$ 135,86"
